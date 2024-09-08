@@ -1,2 +1,2 @@
 # Events example
-This program is a simple of example of how to implement an event handler in JavaScript.
+This program is a simple example of how to implement an event handler in JavaScript.
