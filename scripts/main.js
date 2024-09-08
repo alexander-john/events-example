@@ -4,9 +4,10 @@ function random(num)  {
     return Math.floor(Math.random() * (num + 1));
 }
 
-function bgChange() {
+function bgChange(e) {
     const rndColor = `rgb(${random(255)} ${random(255)} ${random(255)})`;
-    document.body.style.backgroundColor = rndColor;
+    e.target.style.backgroundColor = rndColor;
+    console.log(e);
 }
 
-btn.onclick = bgChange;
+btn.addEventListener("click", bgChange);
