@@ -4,7 +4,9 @@ function random(num)  {
     return Math.floor(Math.random() * (num + 1));
 }
 
-btn.addEventListener("click", () => {
+function changeBackground() {
     const rndColor = `rgb(${random(255)} ${random(255)} ${random(255)})`;
     document.body.style.backgroundColor = rndColor;
-});
+}
+
+btn.addEventListener("click", changeBackground);
